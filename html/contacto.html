@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    <!-- Header con navegación -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="servicios.html">Servicios</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Sección Contacto -->
+    <section id="formulario">
+        <div class="container">
+            <h1 class="titulo">Lorem ipsum</h1>
+        </div>
+    </section>
+
+    <!-- Formulario de contacto -->
+    <section id="formulario-contacto">
+        <div class="container">
+            <form action="/enviar-datos" method="post" name="formulario">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="mail">Email:</label>
+                    <input type="email" id="mail" name="email"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Enviar"/>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer con logo y enlaces a redes sociales -->
+    <footer>
+        <div class="footer-container">
+            <!-- Logo de la marca -->
+            <div class="logo-marca">
+                <a href="../index.html" target="_self">
+                    <img src="../assets/logo-marca.png" alt="Logo de la marca">
+                </a>
+            </div>
+
+            <!-- Logos de redes sociales -->
+            <div class="redes-sociales">
+                <a href="https://www.linkedin.com" target="_blank">
+                    <img src="../assets/linkedin-logo.png" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="../assets/instagram-logo.png" alt="Instagram">
+                </a>
+                <a href="https://www.behance.net" target="_blank">
+                    <img src="../assets/behance-logo.png" alt="Behance">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

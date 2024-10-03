@@ -1,0 +1,226 @@
+/* Enlace API de Google Fonts con CSS para que aplique Open Sans y Montserrat a todas las páginas del sitio */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #E5EAF5; /* Blanco azulado */
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #1E1E5D; /* Azul oscuro */
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header a {
+    color: #E5EAF5; /* Blanco azulado */
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+header a:hover {
+    color: #587FFC; /* Cambia el color a Azul claro al pasar el cursor*/
+}
+
+header a:active {
+    color: #FF8692; /* Cambia el color al Rosa claro al hacer click*/
+    transition: 0.1s ease;
+}
+
+/* Secciones */
+section {
+    margin-top: 80px; /* Añade espacio para el header fijo */
+    padding: 40px 20px;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #1E1E5D; /* Azul oscuro */
+    font-size: 2em;
+    margin: 0.5em 0;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #FF8692; /* Rosa claro */
+    font-size: 1.5em;
+    margin: 0.5em 0;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Imágenes */
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Botones */
+.boton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; /* Mayúscula */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #FF8692; /* Rosa claro */
+    color: #1E1E5D; /* Azul oscuro */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    border: none;
+}
+
+.boton:hover {
+    background-color: #587FFC; /* Azul */
+    color: #E5EAF5; /* Blanco azulado */
+    border: none;
+}
+
+/* Formulario */
+form {
+    display: block;
+    text-align: left;
+    background-color: #E5EAF5; /* Blanco azulado */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 50%;
+    margin: 20px auto;
+}
+
+form label {
+    font-size: 1.1em;
+    display: block;
+    margin-bottom: 10px;
+    color: #1E1E5D; /* Azul oscuro */
+}
+
+form input[type="text"], form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #1E1E5D; /* Azul oscuro */
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #1E1E5D; /* Azul oscuro */
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 150px;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form textarea:focus {
+    border: 2px solid #587FFC; /* Azul */
+    outline: none;
+    transition: 0.5s ease;
+}
+
+
+form input[type="submit"] {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; /* Mayúscula */
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FF8692; /* Rosa claro */
+    color: #1E1E5D; /* Azul oscuro */
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #587FFC; /* Azul */
+    color: #E5EAF5; /* Blanco azulado */
+    border: none;
+}
+
+/* Footer */
+footer {
+    background-color: #1E1E5D; /* Azul oscuro */
+    padding: 20px 0;
+    color: #E5EAF5; /* Blanco azulado */
+    margin-top: 20px;
+}
+
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+footer .logo-marca {
+    margin-right: auto;
+    width: 30px;
+}
+
+footer .logo-marca img:hover {
+    transform: rotate(360deg);
+    transition: 1.5s ease;
+}
+
+footer .redes-sociales {
+    margin-left: auto;
+}
+
+footer .redes-sociales a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .redes-sociales img {
+    width: 30px;
+    height: auto;
+    transition: 0.5s ease;
+}
+
+.redes-sociales a:nth-child(1) img:hover {
+    content: url('../assets/linkedin-logo-hover.png');
+    transform: scale(110%);
+}
+
+.redes-sociales a:nth-child(2) img:hover {
+    content: url('../assets/instagram-logo-hover.png');
+    transform: scale(110%);
+}
+
+.redes-sociales a:nth-child(3) img:hover {
+    content: url('../assets/behance-logo-hover.png');
+    transform: scale(110%);
+}

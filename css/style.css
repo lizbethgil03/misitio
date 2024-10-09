@@ -13,6 +13,7 @@ body {
 
 /* Header */
 header {
+    padding-top: 1px;
     background-color: #1E1E5D; /* Azul oscuro */
     padding: 20px 0;
     position: fixed;
@@ -49,24 +50,30 @@ header a:active {
     transition: 0.1s ease;
 }
 
+/* Encabezados */
+#inicio, #sobre-nosotros, #servicios, #portfolio, #contacto {
+    margin-top: 80px; /* Añade espacio para el header fijo */
+}
+
 /* Secciones */
 section {
-    margin-top: 80px; /* Añade espacio para el header fijo */
-    padding: 40px 20px;
+    padding: 20px;
 }
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #1E1E5D; /* Azul oscuro */
     font-size: 2em;
-    margin: 0.5em 0;
+    margin: 1em 0;
 }
 
 h2 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     color: #FF8692; /* Rosa claro */
     font-size: 1.5em;
-    margin: 0.5em 0;
+    margin: 2em 0 1em 0;
 }
 
 p {
@@ -80,6 +87,16 @@ img {
     margin: 0 auto;
     max-width: 100%;
     height: auto;
+}
+
+/* Imágenes nuestros clientes */
+#clientes img {
+    padding: 20px 0px;
+}
+
+/* Imágenes galería del portfolio */
+#portfolio-galeria img {
+    padding: 0px 0px 23px 0px;
 }
 
 /* Botones */

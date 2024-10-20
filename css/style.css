@@ -13,41 +13,124 @@ body {
 
 /* Header */
 header {
-    padding-top: 1px;
     background-color: #1E1E5D; /* Azul oscuro */
-    padding: 20px 0;
+    padding: 15px 0px 65px 0px;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
+    display: flex;
+    align-items: center;
 }
 
-header nav ul {
+/* Estilo del logo en menú */
+.logo-marca-menu {
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-marca-menu img {
+    height: 35px;
+}
+
+/* Menú */
+.menu {
     list-style: none;
-    margin: 0;
+    margin: -30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu li {
     padding: 0;
+    margin: 0px 15px;
 }
 
-header nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-header a {
+.menu a {
     color: #E5EAF5; /* Blanco azulado */
     text-decoration: none;
     font-weight: bold;
     transition: 0.3s ease;
+    align-items: center;
+    padding: 5px 0;
 }
 
-header a:hover {
-    color: #587FFC; /* Cambia el color a Azul claro al pasar el cursor*/
+.menu a:hover {
+    color: #587FFC; /* Cambia el color a Azul claro al pasar el cursor */
 }
 
-header a:active {
-    color: #FF8692; /* Cambia el color al Rosa claro al hacer click*/
+.menu a:active {
+    color: #FF8692; /* Cambia el color al Rosa claro al hacer click */
     transition: 0.1s ease;
+}
+
+/* Oculta el menú para pantallas móviles y lo muestra cuando el checkbox esté activo */
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    display: none; /* Oculta el icono en desktop */
+    font-size: 30px;
+    cursor: pointer;
+    color: #E5EAF5; /* Blanco azulado */
+}
+
+/* Para dispositivos móviles */
+@media (max-width: 768px) {
+    header {
+        padding: 10px 0px 60px 0px; /* Ajuste de padding */
+        position: relative; /* Posición relativa para contener el menú */
+    }
+
+    /* Estilo del logo en menú */
+    .logo-marca-menu {
+        margin-left: 20px;
+        display: flex;
+        align-items: center; /* Alineación vertical */
+    }
+
+    .menu {
+        max-height: 0; /* Ocultar menú inicialmente */
+        overflow: hidden;
+        flex-direction: column;
+        background-color: #1E1E5D; /* Azul oscuro */
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        transition: max-height 0.5s ease, padding 0.5s ease; /* Transiciones suaves */
+        padding: 0px; /* Sin padding inicialmente */
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    /* Mostrar menú al activar el checkbox */
+    #menu-toggle:checked + .menu-icon + nav .menu {
+        text-align: center;
+        width: 100%;
+        max-height: 400px; /* Ajusta a la altura máxima que necesites */
+        padding: 15px 0; /* Añadir padding al desplegar */
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+
+    .menu-icon {
+        display: block; /* Mostrar icono de menú hamburguesa */
+        margin: -40px 20px -40px 0px;
+        text-align: right;
+        font-size: 30px; /* Tamaño del icono */
+    }
+
+    .menu li {
+        margin: 10px 0; /* Espacio vertical entre los elementos del menú */
+    }
 }
 
 /* Encabezados */

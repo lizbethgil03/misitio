@@ -1,0 +1,59 @@
+/* Variables */
+$azul-oscuro: #1E1E5D;
+$blanco-azulado: #E5EAF5;
+
+/* Footer */
+footer {
+    background-color: $azul-oscuro; /* Azul oscuro */
+    padding: 20px 0;
+    color: $blanco-azulado; /* Blanco azulado */
+    margin-top: 20px;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .logo-marca {
+        margin-right: auto;
+        width: 30px;
+
+        img:hover {
+            transform: rotate(360deg);
+            transition: 1.5s ease;
+        }
+    }
+
+    .redes-sociales {
+        margin-left: auto;
+
+        a {
+            display: inline-block;
+            margin: 0 10px;
+
+            img {
+                width: 30px;
+                height: auto;
+                transition: 0.5s ease;
+
+                &:hover {
+                    transform: scale(110%);
+                }
+            }
+
+            &:nth-child(1) img:hover {
+                content: url('../assets/linkedin-logo-hover.png');
+            }
+
+            &:nth-child(2) img:hover {
+                content: url('../assets/instagram-logo-hover.png');
+            }
+
+            &:nth-child(3) img:hover {
+                content: url('../assets/behance-logo-hover.png');
+            }
+        }
+    }
+}

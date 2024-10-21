@@ -1,0 +1,31 @@
+/* Secciones */
+section {
+    padding: 20px;
+
+    /* Encabezados */
+    &#inicio, &#sobre-nosotros, &#servicios, &#portfolio, &#contacto {
+        margin-top: 80px; /* Añade espacio para el header fijo */
+    }
+
+    h1 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #1E1E5D; /* Azul oscuro */
+        font-size: 2em;
+        margin: 1em 0;
+    }
+
+    h2 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        color: #FF8692; /* Rosa claro */
+        font-size: 1.5em;
+        margin: 2em 0 1em 0;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+        color: #666;
+        line-height: 1.6;
+    }
+}

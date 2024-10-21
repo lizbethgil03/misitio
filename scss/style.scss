@@ -1,0 +1,13 @@
+// base
+@import './base/reset';
+
+
+@import './layout/header';
+@import './layout/secciones';
+@import './layout/imagenes';
+@import './layout/botones';
+@import './layout/formulario';
+@import './layout/footer';
+
+// media query
+@import './layout/media768';

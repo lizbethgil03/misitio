@@ -1,0 +1,22 @@
+/* Enlace API de Google Fonts con CSS para que aplique Open Sans y Montserrat a todas las páginas del sitio */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* Definición de variables */
+$background-color: #E5EAF5; /* Blanco azulado */
+$font-family: 'Open Sans', sans-serif;
+
+/* Reset */
+* {
+    margin: 0px;
+    padding: opx;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    background-color: $background-color;
+    text-align: center;
+}

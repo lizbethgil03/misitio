@@ -1,0 +1,22 @@
+/* Botones */
+.boton {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase; /* Mayúscula */
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 20px 0;
+    background-color: #FF8692; /* Rosa claro */
+    color: #1E1E5D; /* Azul oscuro */
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.5s ease;
+    border: none;
+  
+    &:hover {
+      background-color: #587FFC; /* Azul */
+      color: #E5EAF5; /* Blanco azulado */
+      border: none;
+    }
+  }
+  

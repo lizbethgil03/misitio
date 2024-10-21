@@ -1,0 +1,75 @@
+/* Variables */
+$azul-oscuro: #1E1E5D;
+$blanco-azulado: #E5EAF5;
+$azul-claro: #587FFC;
+$rosa-claro: #FF8692;
+
+/* Header */
+header {
+    background-color: $azul-oscuro;
+    padding: 15px 0px 65px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+
+    /* Estilo del logo en menú */
+    .logo-marca-menu {
+        padding-top: 10px;
+        margin-left: 10px;
+        margin-bottom: 0px;
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 35px;
+        }
+    }
+
+    /* Menú */
+    .menu {
+        list-style: none;
+        margin: -30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        li {
+            padding: 0;
+            margin: 0px 15px;
+
+            a {
+                color: $blanco-azulado;
+                text-decoration: none;
+                font-weight: bold;
+                transition: 0.3s ease;
+                align-items: center;
+                padding: 5px 0;
+
+                &:hover {
+                    color: $azul-claro;
+                }
+
+                &:active {
+                    color: $rosa-claro;
+                    transition: 0.1s ease;
+                }
+            }
+        }
+    }
+
+    /* Oculta el menú para pantallas móviles y lo muestra cuando el checkbox esté activo */
+    #menu-toggle {
+        display: none;
+    }
+
+    .menu-icon {
+        display: none; /* Oculta el icono en desktop */
+        font-size: 30px;
+        cursor: pointer;
+        color: $blanco-azulado;
+    }
+}

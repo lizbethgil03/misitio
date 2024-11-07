@@ -26,6 +26,11 @@ header {
 
         img {
             height: 35px;
+            transition: 0.5s ease;
+
+            &:hover {
+                transform:scale(110%);
+            }
         }
     }
 
